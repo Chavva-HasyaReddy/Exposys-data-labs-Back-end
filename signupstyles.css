@@ -1,0 +1,148 @@
+/* Font Import */
+@font-face {
+    font-family: 'Ambit';
+    src: url('https://fonts.googleapis.com/css2?family=Ambit:wght@400;700&display=swap');
+    font-style: normal;
+    font-weight: 400, 700;
+}
+
+/* Main Styles */
+.signup {
+    margin-bottom: 150px;
+}
+
+.signup-content {
+    padding: 75px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.signup-form {
+    width: 50%;
+    overflow: hidden;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding-left: 34px;
+}
+
+.form-title {
+    margin-bottom: 33px;
+    font-family: 'Ambit', sans-serif;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #222;
+    font-family: 'Ambit', sans-serif;
+}
+
+input {
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 6px 30px;
+    font-family: 'Ambit', sans-serif;
+    box-sizing: border-box;
+}
+
+.input-placeholder {
+    color: #999;
+}
+
+.input:focus {
+    border-bottom: 1px solid #222;
+}
+
+.agree-term {
+    display: inline-block;
+    width: auto;
+}
+
+.form-button {
+    text-align: center;
+}
+
+.form-submit {
+    display: inline-block;
+    background: #6dabe4;
+    color: #fff;
+    border-bottom: none;
+    width: auto;
+    padding: 15px 39px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Ambit', sans-serif;
+}
+
+.form-submit:hover {
+    background: #4292dc;
+}
+
+.signup-image {
+    width: 50%;
+    margin-top: 45px;
+}
+
+.signup-image figure {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.signup-image-link {
+    font-size: 14px;
+    color: #222;
+    display: block;
+    text-align: center;
+    font-family: 'Ambit', sans-serif;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .signup-content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .signup-form {
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding: 0 30px;
+    }
+
+    .signup-image {
+        width: auto;
+        margin-top: 50px;
+    }
+
+    .form-button {
+        text-align: center;
+    }
+
+    .form-title {
+        text-align: center;
+    }
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 10px 0;
+    font-size: 16px;
+}
